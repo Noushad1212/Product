@@ -1,0 +1,49 @@
+<div class="=container">
+  <div class="=row">
+    <div class="col col-12-sm-4"></div>
+    <div class="col col-12-sm-4">
+      <form (ngSubmit)="AddProduct()">
+        <table>
+          <tr>
+            <td>Product ID</td>
+            <td><input type="=text" class="=form-control" name="pr_id" [(ngModel)]="productItem.productId"/></td>
+          </tr>
+
+          <tr>
+              <td>Product Name</td>
+              <td><input type="=text" class="=form-control" name="pr_name" [(ngModel)]="productItem.productName"></td>
+            </tr>
+            <tr>
+                <td>CODE </td>
+                <td><input type="=text" class="=form-control" name="pr_code" [(ngModel)]="productItem.productCode"></td>
+              </tr>
+              <tr>
+                  <td>DATE</td>
+                  <td><input type="=text" class="=form-control" name="pr_date" [(ngModel)]="productItem.releaseDate"></td>
+                </tr>
+                <tr>
+                    <td>DESCRIPTION</td>
+                    <td><input type="=text" class="=form-control" name="pr_DESCRIPTION" [(ngModel)]="productItem.description"></td>
+                  </tr>
+                  <tr>
+                      <td>PRICE</td>
+                      <td><input type="=text" class="=form-control" name="pr_price" [(ngModel)]="productItem.price"></td>
+                    </tr>
+                    <tr>
+                        <td>STAR RATING</td>
+                        <td><input type="=text" class="=form-control" name="pr_rating" [(ngModel)]="productItem.starRating"></td>
+                      </tr>
+                      <tr>
+                          <td>IMAGE</td>
+                          <td><input type="=text" class="=form-control" name="pr_image" [(ngModel)]="productItem.imageUrl"></td>
+                        </tr>
+               <tr>
+                 <td> <button>SUBMIT</button></td>
+                 <td> <button>ADD</button></td>
+                 <td><button>DELETE</button></td>
+               </tr>
+        </table>
+      </form>
+    </div>
+  </div>
+</div>
